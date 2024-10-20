@@ -61,7 +61,6 @@ func main() {
 	}
 
 	log.Println("Explore trends:")
-	// get widgets for Golang keyword in programming category
 	explore, err := gogtrends.Explore(ctx, &gogtrends.ExploreRequest{
 		ComparisonItems: []*gogtrends.ComparisonItem{
 			{
@@ -70,7 +69,7 @@ func main() {
 				Time:    "today 12-m",
 			},
 		},
-		Category: 31, // Programming category
+		Category: 31,
 		Property: "",
 	}, langEn)
 	handleError(err, "Failed to explore widgets")
@@ -116,7 +115,7 @@ func main() {
 				Time:    "today 12-m",
 			},
 		},
-		Category: 31, // Programming category
+		Category: 31,
 		Property: "",
 	}, langEn)
 	handleError(err, "Failed to explore compare widgets")

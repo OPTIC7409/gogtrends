@@ -148,7 +148,6 @@ func (c *gClient) unmarshal(str string, dest interface{}) error {
 func (c *gClient) trends(ctx context.Context, path, hl, loc string, args ...map[string]string) (string, error) {
 	u, _ := url.Parse(path)
 
-	// required params
 	p := client.defaultParams()
 	if len(loc) > 0 {
 		p.Set(paramGeo, loc)

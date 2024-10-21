@@ -1,4 +1,4 @@
-module gogtrends
+module github.com/OPTIC7409/gogtrends
 
 go 1.23.0
 
